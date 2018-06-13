@@ -6,8 +6,8 @@ const User = require('./User')
 mongoose.connect('mongodb://localhost/authDemo')
   .then(() => {
     console.log('\n === Database Connected ===\n')
-    server.listen(5000, () => {
-      console.log('\n === Server Listening on Port 5000 === \n')
+    server.listen(5001, () => {
+      console.log('\n === Server Listening on Port 5001 === \n')
     })
   })
   .catch(err => console.log(err))
